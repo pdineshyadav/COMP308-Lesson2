@@ -1,11 +1,17 @@
 // IIFE -- Immediately Invoked Function Expression
-(function () {
+(function(){
     function Start() {
-        var student;
-        student = new objects.Student(20, "David", "0123456789");
+        
+        let student: objects.Student;
+        student    = new objects.Student(20, "David", "0123456789");
         student.saysHello();
         student.studies();
     }
+
     window.addEventListener("load", Start);
-}());
-//# sourceMappingURL=app.js.map
+
+
+})();
+
+
+
